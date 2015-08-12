@@ -1,0 +1,96 @@
+body{
+	
+	font-family: Lato, sans-serif;
+	font-size: 100%;
+	margin: 0;
+}
+header{
+	background-color: #403838;
+}
+#menu> li> a{
+	text-decoration: none;
+	color: red;
+	font-size: 130%;
+}
+#menu> li> a:hover {
+	color: lightgreen;
+}
+#menu{
+	list-style-type: none;
+}
+
+#menu>li{
+	display: inline-block;
+	margin: 1vw;
+}
+#hr{
+	background-color: red;
+	height: 3px;
+	width: 100%;
+	position: relative;
+	margin-top: -15px;
+}
+
+
+.my_content{
+	width: 70%;
+	margin: 0 auto;
+}
+input {
+	color: green;
+   border: 1px solid lightgrey;
+   border-radius: 5px;
+   width: 300px;
+}
+textarea{
+	max-width:301px;
+	max-height: 75px;
+}
+
+
+#form_contact{
+	border: 1px solid grey;
+	margin: 15px auto;
+	width: 500px;
+	background-color: lightgreen;
+}
+#form_contact>*{
+margin-left: 15px;
+}
+#form_contact:first-child label{
+	margin-top: 15px;
+}
+#form_contact:last-child button{
+	margin-bottom: 15px;
+}
+#map{
+	margin: 10px auto;
+	width: 606px;
+	height: 456px;
+	border: 3px solid blue;
+}
+#My_foto {
+	float: right;
+	height: 70vh;
+	width: 25vw;
+}
+#logo{
+	width: 100px;
+	height: 35px;
+}
+iframe{
+	margin: auto;
+}
+.footer {
+	background-color: #403838;
+	color: white;
+	height: 100px;
+}
+.footer>p{
+	margin-left: 5%;
+}
+.foter_s {
+		float: right;
+		margin-right: 5%;
+		margin-top: -20px;		
+}

@@ -3,10 +3,85 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MySite</title>
-	
-	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
+<header class="my_content">
+	<nav>
+		<ul id="menu" class="text-uppercase">
+		    <li><img id="logo" src="svg2-300x131.png" alt="logo"></li>
+			<li><a href="#about" >обо мне</a></li>
+			<li><a href="#galery">мои фото</a></li>
+			<li><a href="#contact">контакты</a></li>
+		</ul>
+		<div id="hr"> </div>
+	</nav>
+</header>
+<section class="my_content">
+<article>
+	<img  id="My_foto" src="../myFoto.jpg" alt="My foto">
+	<h2 id="about" class="text-uppercase text-center">O себе:</h2>
+<p>Всем привет! Меня зовут Дима Савчук, мне 26 лет.</p>
+<p>Хобби: подводная охота, рыбалка</p>
+<p>Ищу работу(стажировку) по web-верстке.</p>
+
+<h3>Образование:</h3>
+	<p>НТУУ "КПИ" приборостроительный факультет.</p>
+	<h3>2014-2015 г.г.  Курсы: </h3>
+	<ul>
+		<li>Начальный курс Web-дизайна </li>
+		<li>Курсы английского языка</li>
+	</ul>
+	<p>(IT Education Academy)</p>
+	<ul>
+	    <li>Базовый курс HTML и CSS</li>
+	    <li>Начальный курс JavaScript</li>
+	    <li>Базовый курс JavaScript</li>
+	</ul>
+	<p>(WEB CAMP)</p>
+	<ul>
+		<li>Front-end разработка</li>
+	</ul>
+	</article>
+	<article>
+		<h2 id="galery" class="text-uppercase text-center">мои фото</h2>
+		<p class="text-center"><em>Раздел в наполнении</em></p>
+	</article>
+	<article>
+		<h2 id="contact" class="text-uppercase text-center">Контакты</h2>
+		<p class="text-center"><strong>Для связи со мной можете использовать форму ниже</strong><em>(пока не работает)</em></p>
+
+		<form action="" name="my_form">
+			<div id="form_contact" >
+			<label for="form_name">Ваше имя:</label><br>
+			<input type="text" id="form_name" placeholder="Name">
+			<p></p>
+			<label for="yourEmail">Ваша почта:</label><br>
+			<input type="email" id="yourEmail" placeholder="Email">
+			<p></p>
+			<label for="yourMessage">Ваше сообщение:</label><br>
+			<textarea name="message" id="yourMessage" cols="39" rows="4" placeholder="Message"></textarea>
+			<p></p>
+			<button type="submit" class="btn btn-default">Отправить</button>
+			</div>
+		</form>
+		<h4 class="text-center">Карта</h4>
+<div id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d114945.15379033913!2d30.534229407210162!3d50.460598898419974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1439375760187" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	</article>
+
+	<footer class="footer">
+	<p>Савчук Дмитрий</p>
+	<p>Верстка сайтов</p>
+	<p>Email: savchycd@gmail.com</p>
+	<p class="foter_s"><span class="glyphicon glyphicon-copyright-mark"></span> Savchyc Dima 2015</p>
+</footer>
+
+</section>
+
 	
 </body>
 </html>

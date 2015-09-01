@@ -5,7 +5,7 @@ body{
 	margin: 0;
 }
 header{
-	background-color: #403838;
+	background-color: #F0DC6C;
 }
 #menu> li> a{
 	text-decoration: none;
@@ -13,7 +13,7 @@ header{
 	font-size: 130%;
 }
 #menu> li> a:hover {
-	color: lightgreen;
+	color: blue;
 }
 #menu{
 	list-style-type: none;
@@ -71,8 +71,10 @@ margin-left: 15px;
 }
 #My_foto {
 	float: right;
-	height: 70vh;
-	width: 25vw;
+	/*height: 70vh;
+	width: 25vw;*/
+	width: 215px;
+	height: 317px;
 }
 #logo{
 	width: 100px;
@@ -94,3 +96,20 @@ iframe{
 		margin-right: 5%;
 		margin-top: -20px;		
 }
+#up{
+	position: fixed;
+	margin-left: 3vw;
+	color: blue;
+	display: none;
+}
+#gallery{
+			position: relative;
+			height: 400px;
+		}
+		#gallery img{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#gallery img:not(:first-child){
+			display: none;

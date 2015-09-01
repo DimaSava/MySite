@@ -5,7 +5,7 @@
 	<title>MySite</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'> -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <header class="my_content">
@@ -19,7 +19,11 @@
 		<div id="hr"> </div>
 	</nav>
 </header>
+<div id="up">
+	<a href="#menu"><strong>наверх<span class="glyphicon glyphicon-arrow-up"></span></strong></a> 
+</div>
 <section class="my_content">
+
 <article>
 	<img  id="My_foto" src="../myFoto.jpg" alt="My foto">
 	<h2 id="about" class="text-uppercase text-center">O себе:</h2>
@@ -48,6 +52,24 @@
 	<article>
 		<h2 id="galery" class="text-uppercase text-center">мои фото</h2>
 		<p class="text-center"><em>Раздел в наполнении</em></p>
+
+
+
+
+
+		<div id='gallery'>
+		<img src="http://lorempixel.com/600/400/animals/1" alt="">
+		<img src="http://lorempixel.com/600/400/animals/2" alt="">
+		<img src="http://lorempixel.com/600/400/animals/3" alt="">
+		<img src="http://lorempixel.com/600/400/animals/4" alt="">
+		<img src="http://lorempixel.com/600/400/animals/5" alt="">
+	</div>
+	<div id='small-gallery'> </div>
+
+
+
+
+
 	</article>
 	<article>
 		<h2 id="contact" class="text-uppercase text-center">Контакты</h2>
@@ -81,7 +103,23 @@
 </footer>
 
 </section>
-
+<script> 
+	$(document).ready(function() {
+		$('#gallery img').clone().css({
+				width: '100px',
+				height: 'auto'
+			}).appendTo('#small-gallery');
+});
+		$('#small-gallery').on('click', 'img', function (e) {
+			console.log('works',$(this).index());
+			var index = $(this).index();
+			$('#gallery img:visible').fadeOut('400');
+			$('#gallery img').eq(index).fadeIn('400');
+		
+		});
 	
+	</script>
+
+	<script src="script.js"></script>
 </body>
 </html>
